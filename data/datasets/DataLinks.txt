@@ -1,0 +1,5 @@
+https://huggingface.co/datasets/Toygar/turkish-offensive-language-detection
+
+https://www.kaggle.com/datasets/mrtbeyz/trke-sosyal-medya-paylam-veri-seti/data
+
+https://huggingface.co/datasets/nanelimon/insult-dataset
