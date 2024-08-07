@@ -2,7 +2,17 @@
 Teknofest 2024 NLP (Türkçe Doğal Dil İşleme) Yarışması Github Projesi
 
 
-# Model Kullanımı
+## Model Kullanımı
+Modeli kullanmak için iki yol izleyebilirsiniz:
+
+### 1)Hugging Face Aracılığıyla
+
+
+
+### 2)Github'daki modelin dosyalarıyla
+
+
+
 ```
 !git code
 ```
