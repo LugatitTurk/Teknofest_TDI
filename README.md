@@ -3,7 +3,7 @@ Teknofest 2024 NLP (Türkçe Doğal Dil İşleme) Yarışması Github Projesi
 
 
 ## Modellerin Kullanımı
-Modelleri kullanmak için iki yol izleyebilirsiniz:
+Projemizde 2 model birbirleriyle tek bir model gibi çalışmaktadır. 
 
 ### 1) Hugging Face Aracılığıyla
 Tüm denediğimiz modeller arasından en iyi 5 modeli HuggingFace sayfamıza (https://huggingface.co/LugatitTurk) yüklemiş bulunmaktayız. Bu sayede modelimizi denemek veya kullanmak için githubdan modeli indirmeniz gerekmemektedir. 
