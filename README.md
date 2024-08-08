@@ -1,3 +1,5 @@
+
+![lugatitturk-high-resolution-logo](https://github.com/user-attachments/assets/eef4b151-82a9-4d49-a11d-c50e852fe452)
 # Teknofest_TDI
 Teknofest 2024 NLP (Türkçe Doğal Dil İşleme) Yarışması Github Projesi
 
