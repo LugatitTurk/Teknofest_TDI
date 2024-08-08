@@ -17,13 +17,19 @@ import torch.nn.functional as F
 
 tokenizer = AutoTokenizer.from_pretrained("LugatitTurk/LugatitBert")
 model = AutoModelForSequenceClassification.from_pretrained("LugatitTurk/LugatitBert")
-inputs = tokenizer("metniniz")
-logits = model(**inputs)
-outputs = logits[0][0][:3]
-softmax_values = F.softmax(logits, dim=0)
-percentages = softmax_values * 100
-print(f"Diğer: %{percentages.tolist()[0]}, Şiddet İçerikli: %{percentages.tolist()[1]}, Yönlendirici: %{percentages.tolist()[2]}")
+```
+```
+def ModelTahmini(metin):
+  inputs = tokenizer(metin, return_tensors="pt")
+  outputs = model(**inputs)
+  first_three_probs = outputs[0][0][:3]
+  probabilities = F.softmax(first_three_probs, dim=0)
+  percentages = probabilities * 100
+  result = percentages.detach().numpy()
+  return result
 
+result = ModelTahmini('metniniz')
+print(f"Diğer: %{result[0]}, Şiddet İçerikli: %{result[1]}, Yönlendirici: %{result[2]}")
 ```
 veya 
 ```
