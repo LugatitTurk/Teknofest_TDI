@@ -18,6 +18,5 @@ Modeli kullanmak için iki yol izleyebilirsiniz:
 
 
 
-![leonardo-dicaprio-clapping](https://github.com/user-attachments/assets/c0174161-e2ef-4c5a-b93b-492087f19faf)
 
 
