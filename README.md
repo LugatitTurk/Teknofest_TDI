@@ -63,7 +63,6 @@ git clone https://github.com/LugatitTurk/Teknofest_TDI.git
 3. Modeli Kullanma
 Modeli clone'ladıktan sonra modeli kullanabilirsiniz. Modeli kullanmak için;
 ```
-# Load model directly
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import torch.nn.functional as F
