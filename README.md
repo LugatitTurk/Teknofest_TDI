@@ -5,7 +5,7 @@
 
 
 ## Modellerin Kullanımı
-Projemizde 2 model birbirleriyle tek bir model gibi çalışmaktadır. Bu modellerin kullanımı aşağıdaki gibidir.
+Projemizde 2 model birbirleriyle tek bir model gibi çalışmaktadır. Bu modellerden LugatitBert modelinin çıktılarından eğer ki **Yönlendirici** kategorisi yüzdelik olarak **en yüksek** ise LugatitHaberler modeli çalışıp çıktı olarak 2 modelin SERİN ANLAT BURAYI
 
 ### 1) Hugging Face Aracılığıyla
 Tüm denediğimiz modeller arasından **en iyi 5 modeli** HuggingFace sayfamıza (https://huggingface.co/LugatitTurk) yüklemiş bulunmaktayız. Bu sayede modelimizi denemek veya kullanmak için githubdan modeli indirmeniz gerekmemektedir. 
