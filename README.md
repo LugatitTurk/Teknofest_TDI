@@ -1,6 +1,5 @@
 
-![lugatitturk-high-resolution-logo (1)](https://github.com/user-attachments/assets/bdcaee8c-4b71-4722-bab4-876448d68f21)
-<img src="lugatitturk-high-resolution-logo (1)" alt="Açıklama" width="300" height="200"/>
+![lugatitturk-high-resolut![lugatitturk-high-resolution-logo (2)](https://github.com/user-attachments/assets/d6af1b56-cd51-43ee-bb50-473d9b000f73)
 # Teknofest 2024 NLP (Türkçe Doğal Dil İşleme) Yarışması Github Projesi
 
 
