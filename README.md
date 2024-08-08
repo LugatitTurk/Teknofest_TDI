@@ -100,7 +100,7 @@ yöntemini kullanabilirsiniz.
 ## Datasetleri 
 Projemiz 2 model içermektedir. Bu modellerin eğitimi için kullanılan datasetleri data klasörünün içindeki datasets klasöründe bulunmaktadır.
 
-#### LügatiBert'in Datasetleri
+#### LügatitBert'in Datasetleri
 LugatiBert modelimizi eğitmek için;
   - data klasöründe bulunan data scraper kodu aracılığıyla Twitter'dan elde edilen veriler,
     
@@ -112,7 +112,7 @@ LugatiBert modelimizi eğitmek için;
 
 kullanılmıştır.
 
-#### LugatiHaber'in Datasetleri
+#### LugatitHaber'in Datasetleri
 LugatiHaber modelimizi eğitmek için;
   - Hazır dataseti
       - https://www.kaggle.com/datasets/anil1055/turkish-headlines-dataset
