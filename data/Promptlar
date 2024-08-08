@@ -1,63 +1,76 @@
-kategori 3: Bir gruba veya insana yıkıcı, zarar verici, şiddet içerikli bir olası aksiyon uygulamaya teşvik eden tweetler ve topluca yapılmak istenen şiddet olayları bu kategoridedir. Bu kategoriye yapılmak istenen fiziksel şiddet vb saldırılar da dahildir.
-
+İLK GENEL YÖNERGE (PROMPT):
 
 Kategori 3: Tweetlerde fiziksel şiddet tehditleri veya açık şiddet çağrıları yer alıyorsa, bu tweetleri "Kategori 3" olarak değerlendirin. Bu kategorideki tweetler, belirli kişilere veya gruplara yönelik şiddet uygulamayı açıkça teşvik eden, tehdit eden veya yönlendiren içerikleri içerir. Aşağıdaki kriterlere dikkat edin:
 - Doğrudan şiddet eylemi önerisi veya tehdidi.
 - Belirli kişilere veya gruplara yönelik şiddet çağrısı.
 - Fiziksel şiddeti hedefleyen veya teşvik eden açık ifadeler.
-
-
 kategori 2: Eğer tweet metni küfür, hakaret, şiddet içerikli bir paylaşımsa ve eğer insanları yönlendirmiyorsa ve şiddet içeren unsurlara yorum niteliği taşımıyorsa bu kategoridedir. Eğer içinde hakaret öğesi bulunuyorsa bu kategoridedir
-
-
 kategori 1: Şiddet veya hakaret veya küfür içermeyen tweetlerdir.
 Çıktı formatını ise şu şekilde istiyorum numara , kategori (sadece sayı) ikisi de ayrı sütunlar olmak
  üzere: ( 50 x 2) formatında
   Yani mesela örneğin 800. tweeti kategori 2 olarak buldun ve bunun için şu formatı tablo şeklindeki formatta bir satır
   2 sütun  olarak 800 (1.sutun) , 2 (2.sutun) olarak vermelisin ve sütun başlıkları sırasıyla numara , kategori olmalı kopyaladığım zaman
    2 sütunlu ve 50 satır elde edip o attığın tabloyu tek tuşla kopyalamam benim için çok önemli 
-tweetler numarasıyla tanımlanmış olacak buna da dikkat etmelisin. İşte veriler :
+tweetler numarasıyla tanımlanmış olacak buna da dikkat etmelisin. İşte veriler : <VERİLER>
 
+FARKLI YÖNERGELER (PROMPTLAR): GENEL
 
+1-)
 Aşağıdaki tweetleri içeren verileri üç kategoriye ayırarak sınıflandırmanız gerekiyor. Kategorilere dikkat etmeniz gereken kriterler şunlardır:
-
-Kategori 3: Doğrudan şiddet eylemi önerisi veya tehdidi içeren, belirli kişilere veya gruplara yönelik şiddet çağrısı yapan, veya açıkça fiziksel şiddeti teşvik eden ifadeler. Bu kategori, tweetlerin içeriğinde fiziksel şiddet, şiddet uygulama isteiği veya tehdit barındırması durumunda uygulanmalıdır. Buradaki eylem gerçekleştirilebilme ihtimaline karşı da değerlendirilmeli saçma sapan bir ihtimalse 2 olarak işaretlenmelidir.
+Kategori 3: Doğrudan şiddet eylemi önerisi veya tehdidi içeren, belirli kişilere veya gruplara yönelik şiddet çağrısı yapan, veya açıkça fiziksel şiddeti teşvik eden ifadeler. Bu kategori, tweetlerin içeriğinde fiziksel şiddet, şiddet uygulama isteiği veya tehdit barındırması durumunda uygulanmalıdır. 
+Buradaki eylem gerçekleştirilebilme ihtimaline karşı da değerlendirilmeli saçma sapan bir ihtimalse 2 olarak işaretlenmelidir.
 Kategori 2: Şiddet içeren, hakaret veya herhangi bir küfür barındıran tweetler, ancak şiddet çağrısı yapmayan veya insanları şiddete yönlendirmeyen ifadeler.
 Kategori 1: Şiddet, hakaret veya küfür içermeyen, şiddet veya hakaret içeren unsurları yorum niteliğinde barındırmayan veya diğer toplumsal konularla ilgili tweetler.
 Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin:
 
 
-Kategori 1: Şiddet, hakaret veya küfür içermeyen tweetlerdir. Bu kategorideki tweetler, olumsuz duyguları ifade edebilir ancak doğrudan şiddet, hakaret veya tehdit içermemelidir. İronik veya eleştirel yorumlar, toplumsal olaylara dair yorumlar ve benzer içerikler bu kategoriye girer.
 
-
+2-)
 Şimdi senle bir veri etiketleme görevini gerçekleştireceğiz. Bu görevde 3 tane kategorimiz olacak ve buna göre verilerimizi etiketleyeceğiz. 
-
 Kategori 1: Şiddet ve toplumsal olumsuz faaliyet içermiyor.
-
 Kategori 2 : Bu kategori şiddet, küfür, aşağılama ve argo ifadeleri kapsar.
-
 Kategori 3: Bu kategori şiddet , küfür , aşağılama ve argo ifadeleri içeren ve ayrıca kesinlikle toplumsal kötü faaliyetleri (dövme, öldürme vb.) kapsar. 
-
-Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın.
+Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. 
+Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın.
 Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin:
 
 
+2 VE 3 Ü AYIRMAK İÇİN YÖNERGELER (PROMPT):
+
+1-)
+Kategori 2 : Bu kategori şiddet, küfür, aşağılama ve argo ifadeleri kapsar. 
+Kategori 3: Bu kategori şiddet , küfür , aşağılama ve argo ifadeleri içeren ve ayrıca bu ifadelerin bir tür toplumsal şiddet olayına dönüşme ihtimali taşıdığında bu kategoriye girmektedir.
+Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. 
+Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın. 
+Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin:
 
 
-Kategori 2 : Bu kategori şiddet, küfür, aşağılama ve argo ifadeleri kapsar. Kategori 3: Bu kategori şiddet , küfür , aşağılama ve argo ifadeleri içeren ve ayrıca bu ifadelerin bir tür toplumsal şiddet olayına dönüşme ihtimali taşıdığında bu kategoriye girmektedir. Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın. Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin:
+2-)
+Kategori 2 : Bu kategori şiddet, küfür, aşağılama ve argo ifadeleri kapsar. Bu kategoride olaylar toplumsal şiddet ögeleri içerebilir fakat burada kategori 3 den farklı olan husus tweet yazanın olası şiddet olayına teşvik etmemesi ve bu şiddet olayına katılma ihtimalinin olmamasıdır. 
+Kategori 3: Bu kategori şiddet , küfür , aşağılama ve argo ifadeleri içeren ve ayrıca bu ifadelerin bir tür toplumsal şiddet olayına dönüşme ihtimali taşıdığında bu kategoriye girmektedir. 
+Buradaki 2 unsur kategori 3 e işaret eder : 1. Tweeti yazan kişinin toplumsal şiddet olayını katılması veya teşvik etmesi bu kategoriye işarettir. 2.Eğer tweeti yazan kişi bir şiddet olayından bahsediyorsa ama kötü bir niyeti yoksa bu 3. kategori değildir. 
+Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın. 
+Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin:
 
 
+3-)
+Kategori 2 : Bu kategori şiddet, küfür, aşağılama ve argo ifadeleri kapsar. Bu kategoride olaylar toplumsal şiddet ögeleri içerebilir fakat burada kategori 3 den farklı olan husus tweet yazanın olası şiddet olayına teşvik etmemesi ve bu şiddet olayına katılma ihtimalinin olmamasıdır. 
+Kategori 3: Bu kategori şiddet , küfür , aşağılama ve argo ifadeleri içeren ve ayrıca bu ifadelerin bir tür toplumsal şiddet olayına dönüşme ihtimali taşıdığında bu kategoriye girmektedir. Buradaki 2 unsur kategori 3 e işaret eder : 
+1. Tweeti yazan kişinin toplumsal şiddet olayını katılması veya teşvik etmesi bu kategoriye işarettir. 
+2.Eğer tweeti yazan kişi bir şiddet olayından bahsediyorsa ama kötü bir niyeti yoksa bu 3. kategori değildir. 
+TOPLUMSAL OLAY TANIMI : Toplumsal olaydan kastımız ise illegal ve polis mudahalesi gerektiren olaylardır. 
+Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın. 
+Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin: Bunu yaparken de toplumsal olayın tanımına dikkat edin
 
-Kategori 2 : Bu kategori şiddet, küfür, aşağılama ve argo ifadeleri kapsar. Bu kategoride olaylar toplumsal şiddet ögeleri içerebilir fakat burada kategori 3 den farklı olan husus tweet yazanın olası şiddet olayına teşvik etmemesi ve bu şiddet olayına katılma ihtimalinin olmamasıdır. Kategori 3: Bu kategori şiddet , küfür , aşağılama ve argo ifadeleri içeren ve ayrıca bu ifadelerin bir tür toplumsal şiddet olayına dönüşme ihtimali taşıdığında bu kategoriye girmektedir. Buradaki 2 unsur kategori 3 e işaret eder : 1. Tweeti yazan kişinin toplumsal şiddet olayını katılması veya teşvik etmesi bu kategoriye işarettir. 2.Eğer tweeti yazan kişi bir şiddet olayından bahsediyorsa ama kötü bir niyeti yoksa bu 3. kategori değildir. Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın. Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin:
 
-
-
-Kategori 2 : Bu kategori şiddet, küfür, aşağılama ve argo ifadeleri kapsar. Bu kategoride olaylar toplumsal şiddet ögeleri içerebilir fakat burada kategori 3 den farklı olan husus tweet yazanın olası şiddet olayına teşvik etmemesi ve bu şiddet olayına katılma ihtimalinin olmamasıdır. Kategori 3: Bu kategori şiddet , küfür , aşağılama ve argo ifadeleri içeren ve ayrıca bu ifadelerin bir tür toplumsal şiddet olayına dönüşme ihtimali taşıdığında bu kategoriye girmektedir. Buradaki 2 unsur kategori 3 e işaret eder : 1. Tweeti yazan kişinin toplumsal şiddet olayını katılması veya teşvik etmesi bu kategoriye işarettir. 2.Eğer tweeti yazan kişi bir şiddet olayından bahsediyorsa ama kötü bir niyeti yoksa bu 3. kategori değildir. TOPLUMSAL OLAY TANIMI : Toplumsal olaydan kastımız ise illegal ve polis mudahalesi gerektiren olaylardır. Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın. Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin: Bunu yaparken de toplumsal olayın tanımına dikkat edin
-
-
-
+2 İLE 3 Ü AYIRMAK İÇİN KULLANILAN SON YÖNERGESİ (PROMPT):
 
 Tweet etiketleme görevini yerine getirmesi gerekn bir uzmansın ve gelen tweetleri sadece bu 2 kategoriye göre değerlendirmelisin.
-
-Kategori 2 : Bu kategori şiddet, küfür, aşağılama ve argo ifadeleri kapsar. Bu kategoride olaylar toplumsal şiddet ögeleri içerebilir fakat burada kategori 3 den farklı olan husus tweet yazanın olası şiddet olayına teşvik etmemesi ve bu şiddet olayına katılma ihtimalinin olmamasıdır. Kategori 3: Bu kategori şiddet , küfür , aşağılama ve argo ifadeleri içeren ve ayrıca bu ifadelerin bir tür toplumsal şiddet olayına dönüşme ihtimali taşıdığında bu kategoriye girmektedir. Buradaki 2 unsur kategori 3 e işaret eder : 1. Tweeti yazan kişinin toplumsal şiddet olayını katılması veya teşvik etmesi bu kategoriye işarettir. 2.Eğer tweeti yazan kişi bir şiddet olayından bahsediyorsa ama kötü bir niyeti yoksa bu 3. kategori değildir.
- TOPLUMSAL OLAY TANIMI : Toplumsal olaydan kastımız ise illegal ve polis mudahalesi gerektiren olaylardır. Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın. Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin: Bunu yaparken de toplumsal olayın tanımına dikkat edin
+Kategori 2 : Bu kategori şiddet, küfür, aşağılama ve argo ifadeleri kapsar. Bu kategoride olaylar toplumsal şiddet ögeleri içerebilir fakat burada kategori 3 den farklı olan husus tweet yazanın olası şiddet olayına teşvik etmemesi ve bu şiddet olayına katılma ihtimalinin olmamasıdır. 
+Kategori 3: Bu kategori şiddet , küfür , aşağılama ve argo ifadeleri içeren ve ayrıca bu ifadelerin bir tür toplumsal şiddet olayına dönüşme ihtimali taşıdığında bu kategoriye girmektedir. Buradaki 2 unsur kategori 3 e işaret eder : 
+1. Tweeti yazan kişinin toplumsal şiddet olayını katılması veya teşvik etmesi bu kategoriye işarettir. 
+2.Eğer tweeti yazan kişi bir şiddet olayından bahsediyorsa ama kötü bir niyeti yoksa bu 3. kategori değildir.
+TOPLUMSAL OLAY TANIMI : Toplumsal olaydan kastımız ise illegal ve polis mudahalesi gerektiren olaylardır. 
+Sana yollayacağım tüm tweetler Türkçe olup buradaki tweetlerin bağlamını iyi anlayıp bu tweeti yazanın amacının ne olduğuna da dikkat etmeni istiyorum. 
+Ayrıca topluma mal olmuş olaylar mecaz anlamda ise bu kategori 3 e girmeyecektir gerçek anlamına odaklanmalısın. 
+Aşağıdaki tweetleri belirlediğiniz kategorilere göre sınıflandırın ve her tweetin numarasını ve kategorisini iki sütunlu bir tablo olarak verin: Bunu yaparken de toplumsal olayın tanımına dikkat edin
