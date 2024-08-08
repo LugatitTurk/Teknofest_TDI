@@ -5,7 +5,7 @@ Teknofest 2024 NLP (Türkçe Doğal Dil İşleme) Yarışması Github Projesi
 ## Model Kullanımı
 Modeli kullanmak için iki yol izleyebilirsiniz:
 
-### 1)Hugging Face Aracılığıyla
+### 1) Hugging Face Aracılığıyla
 Tüm denediğimiz modeller arasından en iyi 5 modeli HuggingFace sayfamıza (https://huggingface.co/LugatitTurk) yüklemiş bulunmaktayız. Bu sayede modelimizi denemek veya kullanmak için githubdan modeli indirmeniz gerekmemektedir. 
 HuggingFace aracılığıyla modeli kullanmak için,
 
@@ -16,9 +16,16 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 tokenizer = AutoTokenizer.from_pretrained("LugatitTurk/LugatitBert")
 model = AutoModelForSequenceClassification.from_pretrained("LugatitTurk/LugatitBert")
 ```
+veya 
+```
+# Use a pipeline as a high-level helper
+from transformers import pipeline
 
+pipe = pipeline("text-classification", model="LugatitTurk/LugatitBert")
+```
+yöntemlerini kullanabilirsiniz.
 
-### 2)Github'daki modelin dosyalarıyla
+### 2) Github'daki modelin dosyalarıyla
 
 
 
