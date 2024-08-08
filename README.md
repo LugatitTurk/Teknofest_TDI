@@ -12,9 +12,18 @@ HuggingFace aracılığıyla modeli kullanmak için,
 ```
 # Load model directly
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import torch
+import torch.nn.functional as F
 
 tokenizer = AutoTokenizer.from_pretrained("LugatitTurk/LugatitBert")
 model = AutoModelForSequenceClassification.from_pretrained("LugatitTurk/LugatitBert")
+inputs = tokenizer("metniniz")
+logits = model(**inputs)
+outputs = logits[0][0][:3]
+softmax_values = F.softmax(logits, dim=0)
+percentages = softmax_values * 100
+print(f"Diğer: %{percentages.tolist()[0]}, Şiddet İçerikli: %{percentages.tolist()[1]}, Yönlendirici: %{percentages.tolist()[2]}")
+
 ```
 veya 
 ```
@@ -35,19 +44,13 @@ git lfs install
 ```
 
 2. Depoyu Klonla:
-Depoyu klonladığında, Git LFS tarafından izlenen büyük dosyalar otomatik olarak indirilecektir. Depoyu klonlamak için:
+Depoyu klonladığında, Git LFS tarafından izlenen büyük dosyalar otomatik olarak indirilecektir. Depoyu klonlamak için;
 ```
 git clone https://github.com/LugatitTurk/Teknofest_TDI.git
 ```
-Bu, depodaki tüm dosyaları ve Git LFS ile depolanmış büyük dosyaları indirir.
 
-3. Belirli Bir Dosyayı İndir ve Aç:
-Eğer sadece belirli bir dosyayı indirmek istiyorsan, depoyu klonladıktan sonra şu komutu kullanabilirsin:
-```
-git lfs pull --include="path/to/file"
-```
-
-
+3. Modeli Kullanma
+Modeli clone'ladıktan sonra modeli kullanabilirsiniz. Modeli kullanmak için;
 ```
 # Load the tokenizer and model for inference
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
@@ -58,7 +61,6 @@ model = AutoModelForSequenceClassification.from_pretrained("modelin_konumu") #İ
 # Create a pipeline for sentiment analysis
 nlp = pipeline("text-classification", model=model, tokenizer=tokenizer)
 ```
-yöntemini kullanabilirsiniz.
 
 
 ## Datasetleri 
