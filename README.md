@@ -2,43 +2,48 @@
 Teknofest 2024 NLP (Türkçe Doğal Dil İşleme) Yarışması Github Projesi
 
 
-## Model Kullanımı
-Modeli kullanmak için iki yol izleyebilirsiniz:
+## Modellerin Kullanımı
+Modelleri kullanmak için iki yol izleyebilirsiniz:
 
 ### 1) Hugging Face Aracılığıyla
 Tüm denediğimiz modeller arasından en iyi 5 modeli HuggingFace sayfamıza (https://huggingface.co/LugatitTurk) yüklemiş bulunmaktayız. Bu sayede modelimizi denemek veya kullanmak için githubdan modeli indirmeniz gerekmemektedir. 
 HuggingFace aracılığıyla modeli kullanmak için,
 
 ```
-# Load model directly
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import torch.nn.functional as F
 
-tokenizer = AutoTokenizer.from_pretrained("LugatitTurk/LugatitBert")
-model = AutoModelForSequenceClassification.from_pretrained("LugatitTurk/LugatitBert")
+egilimTokenizer = AutoTokenizer.from_pretrained("LugatitTurk/LugatitBert")
+egilimModel = AutoModelForSequenceClassification.from_pretrained("LugatitTurk/LugatitBert")
+
+haberTokenizer = AutoTokenizer.from_pretrained("LugatitTurk/LugatitHaberler")
+haberModel = AutoModelForSequenceClassification.from_pretrained("LugatitTurk/LugatitHaberler")
+
+
 ```
 ```
-def ModelTahmini(metin):
-  inputs = tokenizer(metin, return_tensors="pt")
-  outputs = model(**inputs)
-  first_three_probs = outputs[0][0][:3]
-  probabilities = F.softmax(first_three_probs, dim=0)
+def MetinTahmini(metin):
+  inputs = egilimTokenizer(metin, return_tensors="pt")
+  logits = egilimModel(**inputs)
+  outputs = logits[0][0][:3]
+  probabilities = F.softmax(outputs, dim=0)
   percentages = probabilities * 100
   result = percentages.detach().numpy()
-  return result
 
-result = ModelTahmini('metniniz')
-print(f"Diğer: %{result[0]}, Şiddet İçerikli: %{result[1]}, Yönlendirici: %{result[2]}")
-```
-veya 
-```
-# Use a pipeline as a high-level helper
-from transformers import pipeline
+  if( result[0] < result[2] and result[1] < result[2] ):
+    inputs = haberTokenizer(metin, return_tensors="pt")
+    logits = haberModel(**inputs)
+    outputs = logits[0][0]
+    probabilities = F.softmax(outputs, dim=0)
+    percentages = probabilities * 100
+    result2 = percentages.detach().numpy()
+    return [result,result2]
+  else :
+     return result
 
-pipe = pipeline("text-classification", model="LugatitTurk/LugatitBert")
 ```
-yöntemlerini kullanabilirsiniz.
+yöntemini kullanabilirsiniz.
 
 ### 2) Github'daki modelin dosyalarıyla
 Github'da bulunan modelin boyutu 100mb'dan büyük olduğundan ötürü model git-lfs yönetemiyle yüklenmiştir. Modeli kullanmak için;
@@ -63,29 +68,34 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import torch.nn.functional as F
 
-tokenizer = AutoTokenizer.from_pretrained("modelin_konumu")
-model = AutoModelForSequenceClassification.from_pretrained("modelin_konumu")
+egilimTokenizer = AutoTokenizer.from_pretrained("LugatitBert modelinin konumu")
+egilimModel = AutoModelForSequenceClassification.from_pretrained("LugatitBert modelinin konumu")
+
+haberTokenizer = AutoTokenizer.from_pretrained("LugatitHaberler modelinin konumu")
+haberModel = AutoModelForSequenceClassification.from_pretrained("LugatitHaberler modelinin konumu")
+
 ```
 ```
-def ModelTahmini(metin):
-  inputs = tokenizer(metin, return_tensors="pt")
-  outputs = model(**inputs)
-  first_three_probs = outputs[0][0][:3]
-  probabilities = F.softmax(first_three_probs, dim=0)
+def MetinTahmini(metin):
+  inputs = egilimTokenizer(metin, return_tensors="pt")
+  logits = egilimModel(**inputs)
+  outputs = logits[0][0][:3]
+  probabilities = F.softmax(outputs, dim=0)
   percentages = probabilities * 100
   result = percentages.detach().numpy()
-  return result
 
-result = ModelTahmini('metniniz')
-print(f"Diğer: %{result[0]}, Şiddet İçerikli: %{result[1]}, Yönlendirici: %{result[2]}")
+  if( result[0] < result[2] and result[1] < result[2] ):
+    inputs = haberTokenizer(metin, return_tensors="pt")
+    logits = haberModel(**inputs)
+    outputs = logits[0][0]
+    probabilities = F.softmax(outputs, dim=0)
+    percentages = probabilities * 100
+    result2 = percentages.detach().numpy()
+    return [result,result2]
+  else :
+     return result
 ```
-veya 
-```
-# Use a pipeline as a high-level helper
-from transformers import pipeline
-
-pipe = pipeline("text-classification", model="LugatitTurk/LugatitBert")
-```
+yöntemini kullanabilirsiniz.
 
 
 ## Datasetleri 
