@@ -26,6 +26,19 @@ pipe = pipeline("text-classification", model="LugatitTurk/LugatitBert")
 yöntemlerini kullanabilirsiniz.
 
 ### 2) Github'daki modelin dosyalarıyla
+Github'da bulunan modelin dosyalarıyla modeli denemek veya kullanmak için,
+
+```
+# Load the tokenizer and model for inference
+from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
+
+tokenizer = AutoTokenizer.from_pretrained("LugatitTurk/LugatitBert")
+model = AutoModelForSequenceClassification.from_pretrained("modelin_konumu") #İndirilen modelin konumu
+
+# Create a pipeline for sentiment analysis
+nlp = pipeline("text-classification", model=model, tokenizer=tokenizer)
+```
+yöntemini kullanabilirsiniz.
 
 
 
