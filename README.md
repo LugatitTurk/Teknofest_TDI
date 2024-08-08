@@ -8,7 +8,7 @@
 Projemizde 2 model birbirleriyle tek bir model gibi çalışmaktadır. Bu modellerin kullanımı aşağıdaki gibidir.
 
 ### 1) Hugging Face Aracılığıyla
-Tüm denediğimiz modeller arasından en iyi 5 modeli HuggingFace sayfamıza (https://huggingface.co/LugatitTurk) yüklemiş bulunmaktayız. Bu sayede modelimizi denemek veya kullanmak için githubdan modeli indirmeniz gerekmemektedir. 
+Tüm denediğimiz modeller arasından **en iyi 5 modeli** HuggingFace sayfamıza (https://huggingface.co/LugatitTurk) yüklemiş bulunmaktayız. Bu sayede modelimizi denemek veya kullanmak için githubdan modeli indirmeniz gerekmemektedir. 
 HuggingFace aracılığıyla modeli kullanmak için,
 
 ```
@@ -48,7 +48,7 @@ def MetinTahmini(metin):
 yöntemini kullanabilirsiniz.
 
 ### 2) Github'daki modelin dosyalarıyla
-Github'da bulunan modelin boyutu 100mb'dan büyük olduğundan ötürü model git-lfs yönetemiyle yüklenmiştir. Modeli kullanmak için;
+Github'da bulunan modelin boyutu 100mb'dan büyük olduğundan ötürü model **git-lfs** yönetemiyle yüklenmiştir. Modeli kullanmak için;
 
 1. Git LFS'i Kur:
 Eğer bilgisayarında Git LFS yüklü değilse, öncelikle Git LFS'i kurman gerekir. Terminale şu komutu yazarak kurabilirsin:
