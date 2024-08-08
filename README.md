@@ -58,7 +58,7 @@ kullanılmıştır.
 
 #### LugatiHaber'in Datasetleri
 LugatiHaber modelimizi eğitmek için;
-  - Hazır datasetleri
+  - Hazır dataseti
       - https://www.kaggle.com/datasets/anil1055/turkish-headlines-dataset
 
 kullanılmıştır.
