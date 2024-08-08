@@ -42,8 +42,17 @@ yöntemini kullanabilirsiniz.
 
 
 ## Datasetleri 
-Projemiz 2 model içermektedir. Bu modellerin eğitimi için kullanılan datasetleri **data klasörünün içindeki **datasets klasöründe bulunmaktadır.
-#### LügatiBert 
+Projemiz 2 model içermektedir. Bu modellerin eğitimi için kullanılan datasetleri data klasörünün içindeki datasets klasöründe bulunmaktadır.
+
+#### LügatiBert'in Datasetleri
+LugatiBert modelimizi eğitmek için;
+  _ data klasöründe bulunan data scraper kodu aracılığıyla Twitter'dan elde edilen datalar,
+  _ hazır datasetleri
+    _ https://huggingface.co/datasets/Overfit-GM/turkish-toxic-language
+    _ https://huggingface.co/datasets/nanelimon/insult-dataset
+    _ https://www.kaggle.com/datasets/anil1055/turkish-headlines-dataset
+
+
 
 
 ![Interactive-Neural-Network-Opera-2024-08-07-01-03-28-_online-video-cutter com_](https://github.com/user-attachments/assets/cf4772c9-90a8-4251-8106-092f19cf472f)
