@@ -26,7 +26,27 @@ pipe = pipeline("text-classification", model="LugatitTurk/LugatitBert")
 yöntemlerini kullanabilirsiniz.
 
 ### 2) Github'daki modelin dosyalarıyla
-Github'da bulunan modelin dosyalarıyla modeli denemek veya kullanmak için,
+Github'da bulunan modelin boyutu 100mb'dan büyük olduğundan ötürü model git-lfs yönetemiyle yüklenmiştir. Modeli kullanmak için;
+
+1. Git LFS'i Kur:
+Eğer bilgisayarında Git LFS yüklü değilse, öncelikle Git LFS'i kurman gerekir. Terminale şu komutu yazarak kurabilirsin:
+```
+git lfs install
+```
+
+2. Depoyu Klonla:
+Depoyu klonladığında, Git LFS tarafından izlenen büyük dosyalar otomatik olarak indirilecektir. Depoyu klonlamak için:
+```
+git clone https://github.com/LugatitTurk/Teknofest_TDI.git
+```
+Bu, depodaki tüm dosyaları ve Git LFS ile depolanmış büyük dosyaları indirir.
+
+3. Belirli Bir Dosyayı İndir ve Aç:
+Eğer sadece belirli bir dosyayı indirmek istiyorsan, depoyu klonladıktan sonra şu komutu kullanabilirsin:
+```
+git lfs pull --include="path/to/file"
+```
+
 
 ```
 # Load the tokenizer and model for inference
