@@ -5,7 +5,14 @@
 
 
 ## Modellerin Kullanımı
-Projemizde 2 model birbirleriyle tek bir model gibi çalışmaktadır. Bu modellerden LugatitBert modelinin çıktılarından eğer ki **Yönlendirici** kategorisi yüzdelik olarak **en yüksek** ise LugatitHaberler modeli çalışıp çıktı olarak 2 modelin SERİN ANLAT BURAYI
+Projemizde 2 modeli birleştirerek tek bir model oluşturduk. Bu alt modellerden LügatitBert girdiyi(leri) sınıflandırma görevini yerine getirirken LugatitHaberler girdinin temasını belirlemektedir. LügatitBert girdiyi üç sınıfa ayırıyor, bunlar şiddet içerikli (zorbalık, küfür, hakaret vb.), yönlendirici (toplumu eylem, toplumsal hareket, galeyan gibi herhangi bir aksiyon almaya yönlendiren/ teşvik eden) ve diğer. LugatitHaberler girdiyi yedi temaya ayırıyor, bunlar Dünya, Ekonomi, Kültür, Sağlık, Siyaset, Spor, Diğer. Oluşturduğumuz bu model iki çeşit girdi alabiliyor ve bu girdinin tipine göre çıktı veriyor. 
+
+**Kullanım seneryosu 1:** Tekil girdi
+Modelimize tek bir tweet/cümle/metin girdi olarak verildiğinde öncelikle LügatitBert bu tekil girdinin sınflandırmasını yapıyor. Eğer sınıflandırma sonucu ana odağımız olan 'yönlendirici' kategorisi olursa bu girdi hakkında daha fazla bilgi edinmek amacıyla LugatitHaberler girdinin temasını belirliyor. Bu durumda LügatitBert her sınıf için bir aidiyet olasılığı çıktı veriyor ve girdi, aidiyet olasılığının en yüksek olduğu sınıfa atanıyor. LugatitHaberler de aynı şekilde her tema için bir aidiyet olasılığı çıktı veriyor ve girdi, aidiyet olasılığının en yüksek olduğu temaya atanıyor. 
+
+**Kullanım seneryosu 2:** Çoklu girdi
+Modelimize birden fazla tweet/cümle/metin excel dosyası formatında girdi olarak verildiğinde öncelikle LügatitBert sınıfların exceldeki dağılımını çıktı veriyor. Eğer girilen excel 'yönlendirici' sınıfında veri içeriyosa LugatitHaberler ile bu sınıfta olduğu belirlenen verilerin tema dağılımı çıktı veriliyor. Sınıflar ve temalar belirlenirken yine aidiyet olasılıklarından en yükseği kullanılıyor.
+
 
 ### 1) Hugging Face Aracılığıyla
 Tüm denediğimiz modeller arasından **en iyi 5 modeli** HuggingFace sayfamıza (https://huggingface.co/LugatitTurk) yüklemiş bulunmaktayız. Bu sayede modelimizi denemek veya kullanmak için githubdan modeli indirmeniz gerekmemektedir. 
