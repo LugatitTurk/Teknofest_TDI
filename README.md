@@ -87,10 +87,6 @@ from transformers import pipeline
 pipe = pipeline("text-classification", model="LugatitTurk/LugatitBert")
 ```
 
-# Create a pipeline for sentiment analysis
-nlp = pipeline("text-classification", model=model, tokenizer=tokenizer)
-```
-
 
 ## Datasetleri 
 Projemiz 2 model içermektedir. Bu modellerin eğitimi için kullanılan datasetleri data klasörünün içindeki datasets klasöründe bulunmaktadır.
