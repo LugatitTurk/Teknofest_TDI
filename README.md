@@ -16,3 +16,8 @@ Modeli kullanmak için iki yol izleyebilirsiniz:
 
 ![Interactive-Neural-Network-Opera-2024-08-07-01-03-28-_online-video-cutter com_](https://github.com/user-attachments/assets/cf4772c9-90a8-4251-8106-092f19cf472f)
 
+
+
+![leonardo-dicaprio-clapping](https://github.com/user-attachments/assets/c0174161-e2ef-4c5a-b93b-492087f19faf)
+
+
