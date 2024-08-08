@@ -46,11 +46,11 @@ Projemiz 2 model içermektedir. Bu modellerin eğitimi için kullanılan dataset
 
 #### LügatiBert'in Datasetleri
 LugatiBert modelimizi eğitmek için;
-  _ data klasöründe bulunan data scraper kodu aracılığıyla Twitter'dan elde edilen datalar,
-  _ hazır datasetleri
-    _ https://huggingface.co/datasets/Overfit-GM/turkish-toxic-language
-    _ https://huggingface.co/datasets/nanelimon/insult-dataset
-    _ https://www.kaggle.com/datasets/anil1055/turkish-headlines-dataset
+  - data klasöründe bulunan data scraper kodu aracılığıyla Twitter'dan elde edilen datalar,
+  - hazır datasetleri
+    - https://huggingface.co/datasets/Overfit-GM/turkish-toxic-language
+    - https://huggingface.co/datasets/nanelimon/insult-dataset
+    - https://www.kaggle.com/datasets/anil1055/turkish-headlines-dataset
 
 
 
