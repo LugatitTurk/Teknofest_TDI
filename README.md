@@ -5,7 +5,10 @@
 
 **Not: Github klasör ve dosyalaımızın içerikleritle ilgili bilgi edinmek için README dosyasının en altına inebilirsiniz**
 
-                                          [**WEB SİTEMİZE BURADAN ERİŞEBİLİRSİNİZ**](https://lugatitturk.webflow.io/)
+<div align="center">
+  <h1>Hoşgeldiniz!</h1>
+  <p> [**WEB SİTEMİZE BURADAN ERİŞEBİLİRSİNİZ**](https://lugatitturk.webflow.io/) </p>
+</div>
 
 Projemizde 2 modeli birleştirerek tek bir model oluşturduk. Bu alt modellerden LügatitBert girdiyi(leri) sınıflandırma görevini yerine getirirken LugatitHaberler girdinin temasını belirlemektedir. LügatitBert girdiyi üç sınıfa ayırıyor, bunlar şiddet içerikli (zorbalık, küfür, hakaret vb.), yönlendirici (toplumu eylem, toplumsal hareket, galeyan gibi herhangi bir aksiyon almaya yönlendiren/ teşvik eden) ve diğer. LugatitHaberler girdiyi yedi temaya ayırıyor, bunlar Dünya, Ekonomi, Kültür, Sağlık, Siyaset, Spor, Diğer. Oluşturduğumuz bu model iki çeşit girdi alabiliyor ve bu girdinin tipine göre çıktı veriyor. 
 
