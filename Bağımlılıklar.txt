@@ -6,7 +6,7 @@ chromedriver_autoinstaller
 browsermob-proxy
 requests
 torch
-sklearn
+scikit-learn
 nltk
 transformers
 time
