@@ -81,15 +81,15 @@ Modeli clone'ladıktan sonra modeli kullanabilirsiniz. Modeli nasıl kullanacağ
 
 Projemiz 2 model içermektedir. Bu modellerin eğitimi için kullanılan datasetleri data klasörünün içindeki datasets klasöründe bulunmaktadır.
 
-#### LügatitBert'in Datasetleri
+#### LügatitBert'in Veri Setleri
 LugatiBert modelimizi eğitmek için üç temel yüntem kullandık.
   **1- veri toplama:**
   Data klasöründe bulunan data scraper kodu aracılığıyla Twitter'dan veri topladık,
     
   **2- Hazır datasetleri**
-  İncelediğimiz iki datasetinden modelimiz için uygun olan birkaç veri kullandık, bunlar;
-    - https://huggingface.co/datasets/Overfit-GM/turkish-toxic-language
-    - https://huggingface.co/datasets/nanelimon/insult-dataset
+  İncelediğimiz iki veri setinden modelimiz için uygun olan birkaç veri kullandık, bunlar;
+    - [Overfit'in veriseti](https://huggingface.co/datasets/Overfit-GM/turkish-toxic-language)
+    - [NaneLimon'un veri seti](https://huggingface.co/datasets/nanelimon/insult-dataset)
       
   **3- Sentetik veri üretimi**
   Modelin başarısını arttırmak ve veri kapsamımızı genişletmek için sentetik veri ürettik.
@@ -98,7 +98,7 @@ Kullandığımız bu yöntemlerle toplam **100 bin** veriye ulaştık.
 
 #### LugatitHaberler'in Datasetleri
 LugatiHaber modelimizi eğitmek için halihazırda var olan bir dataset kullandık, bu;
-      - https://www.kaggle.com/datasets/anil1055/turkish-headlines-dataset
+      - [Anıl Güven'in veri seti](https://www.kaggle.com/datasets/anil1055/turkish-headlines-dataset)
 
 ## Github klasör ve dosyalarımız
 
