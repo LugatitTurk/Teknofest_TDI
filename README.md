@@ -108,7 +108,6 @@ Bu klasör veri toplamak için hazırladığımız kod ve yöntemi içerir.
 #### *datasets:*
 Bu klasör kullandığımız hazır verisetlerini içerir.
 #### *promptlar:*
----
 Bu klasör veri etiketleme aşamasında GPT üzerinde kullandığımız promptları içerir.
 
 ### 2- models
@@ -117,16 +116,12 @@ Bu klasör projemiz için oluşturduğumuz modellerini içermektedir.
 ### 3- resources
 Bu klasör ara işlemler için kullandığımız kod ve yöntemleri içermektedir.
 #### *fotoğraflar*
----
 README'de kullandığımız fotoğrafları içerir.
 #### *kendi stopwords*
----
 topladığımız veriye göre oluşturduğumuz stopwordleri içerir.
 #### *stopwordTemizleyici*
----
 Başarı oranı en yüksek model için kullandığımız stopword temizleme kodumuzu içerir.
 #### *trainer*
----
 Oluşturduğumuz modeli eğitme kodumuzu içerir.
 
 ### 4- TDDİ Final Sunum Şablonu
