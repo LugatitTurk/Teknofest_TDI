@@ -1,0 +1,16 @@
+pandas
+numpy
+simpletransformers
+selenium
+chromedriver_autoinstaller
+browsermob-proxy
+requests
+torch
+sklearn
+nltk
+transformers
+time
+json
+os
+configparser
+re
