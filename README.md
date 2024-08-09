@@ -88,8 +88,8 @@ LugatiBert modelimizi eğitmek için üç temel yüntem kullandık.
     
   **2- Hazır datasetleri**
   İncelediğimiz iki veri setinden modelimiz için uygun olan birkaç veri kullandık, bunlar;
-    - [Overfit'in veriseti](https://huggingface.co/datasets/Overfit-GM/turkish-toxic-language)
-    - [NaneLimon'un veri seti](https://huggingface.co/datasets/nanelimon/insult-dataset)
+  -  [Overfit'in veriseti](https://huggingface.co/datasets/Overfit-GM/turkish-toxic-language)
+  -  [NaneLimon'un veri seti](https://huggingface.co/datasets/nanelimon/insult-dataset)
       
   **3- Sentetik veri üretimi**
   Modelin başarısını arttırmak ve veri kapsamımızı genişletmek için sentetik veri ürettik.
@@ -97,14 +97,12 @@ LugatiBert modelimizi eğitmek için üç temel yüntem kullandık.
 Kullandığımız bu yöntemlerle toplam **100 bin** veriye ulaştık.
 
 #### LugatitHaberler'in Datasetleri
-LugatiHaber modelimizi eğitmek için halihazırda var olan bir dataset kullandık, bu;
-      - [Anıl Güven'in veri seti](https://www.kaggle.com/datasets/anil1055/turkish-headlines-dataset)
+LugatiHaber modelimizi eğitmek için [Anıl Güven'in veri seti](https://www.kaggle.com/datasets/anil1055/turkish-headlines-dataset)'ni kullandık.
 
 ## Github klasör ve dosyalarımız
 
-### data
+### 1- data
 Bu klasör veri ile ilgili yaptığımız işlemleri içermektedir. İçerisinde data scraper, datasets ve promptlar bulunmaktadır.
-
 #### data scraper:
 Bu klasör veri toplamak için hazırladığımız kod ve yöntemi içerir.
 #### datasets:
@@ -112,12 +110,11 @@ Bu klasör kullandığımız hazır verisetlerini içerir.
 #### promptlar:
 Bu klasör veri etiketleme aşamasında GPT üzerinde kullandığımız promptları içerir.
 
-### models
+### 2- models
 Bu klasör projemiz için oluşturduğumuz modellerini içermektedir.
 
-### resources
+### 3- resources
 Bu klasör ara işlemler için kullandığımız kod ve yöntemleri içermektedir.
-
 #### fotoğraflar
 README'de kullandığımız fotoğrafları içerir.
 #### kendi stopwords
@@ -127,7 +124,7 @@ Başarı oranı en yüksek model için kullandığımız stopword temizleme kodu
 #### trainer
 Oluşturduğumuz modeli eğitme kodumuzu içerir.
 
-### TDDİ Final Sunum Şablonu
+### 4- TDDİ Final Sunum Şablonu
 Teknofest TDDİ serbest kategori final sunumumuz.
 
 
