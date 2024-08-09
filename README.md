@@ -91,7 +91,7 @@ Modeli clone'ladıktan sonra modeli kullanabilirsiniz. Modeli nasıl kullanacağ
 
 ## Datasetleri 
 
-Projemiz 2 model içermektedir. Bu modellerin eğitimi için kullanılan datasetleri data klasörünün içindeki datasets klasöründe bulunmaktadır.
+Projemiz 2 model içermektedir. Bu modellerin eğitimi için kullanılan datasetleri data klasörünün içindeki datasets klasöründe bulunmaktadır. [HuggingFace sayfamızdan](https://huggingface.co/datasets/LugatitTurk/LugatitDataset) datasetimize ulaşabilir ve indirebilirsiniz.
 
 #### *LügatitBert'in Veri Setleri*
 LugatiBert modelimizi eğitmek için üç temel yüntem kullandık.
