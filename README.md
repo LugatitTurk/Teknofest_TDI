@@ -52,9 +52,21 @@ def MetinTahmini(metin):
     probabilities = F.softmax(outputs, dim=0)
     percentages = probabilities * 100
     result2 = percentages.detach().numpy()
-    return [result,result2]
+    return [{'Diğer': result[0], 
+             'Şiddet İçerikli': result[1], 
+             'Yönlendirici': result[2]},
+            
+            {'Dünya': result2[0],
+             'Ekonomi': result2[1],
+             'Kültür': result2[2],
+             'Sağlık': result2[3],
+             'Siyaset': result2[4],
+             'Spor': result2[5],
+             'Diğer': result2[6]}]
   else :
-     return result
+     return {'Diğer': result[0], 
+             'Şiddet İçerikli': result[1], 
+             'Yönlendirici': result[2]}
 
 ```
 
