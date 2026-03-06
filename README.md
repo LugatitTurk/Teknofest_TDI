@@ -27,7 +27,7 @@ Projemizde 2 modeli birleştirerek tek bir model oluşturduk. Bu alt modellerden
 Modelimize tek bir tweet/cümle/metin girdi olarak verildiğinde öncelikle LügatitBert bu tekil girdinin sınflandırmasını yapıyor. Eğer sınıflandırma sonucu ana odağımız olan 'yönlendirici' kategorisi olursa bu girdi hakkında daha fazla bilgi edinmek amacıyla LugatitHaberler girdinin temasını belirliyor. Bu durumda LügatitBert her sınıf için bir aidiyet olasılığı çıktı veriyor ve girdi, aidiyet olasılığının en yüksek olduğu sınıfa atanıyor. LugatitHaberler de aynı şekilde her tema için bir aidiyet olasılığı çıktı veriyor ve girdi, aidiyet olasılığının en yüksek olduğu temaya atanıyor. 
 
 **Kullanım seneryosu 2:** Çoklu girdi
-Modelimize birden fazla tweet/cümle/metin excel dosyası formatında girdi olarak verildiğinde öncelikle LügatitBert sınıfların exceldeki dağılımını çıktı veriyor. Eğer girilen excel 'yönlendirici' sınıfında veri içeriyosa LugatitHaberler ile bu sınıfta olduğu belirlenen verilerin tema dağılımı çıktı veriliyor. Sınıflar ve temalar belirlenirken yine aidiyet olasılıklarından en yükseği kullanılıyor.
+Modelimize birden fazla tweet/cümle/metin excel dosyası formatında girdi olarak verildiğinde öncelikle LügatitBert sınıfların exceldeki dağılımını çıktı veriyor. Eğer girilen excel 'yönlendirici' sınıfında veri içeriyosa LugatitHaberler ile bu sınıfta olduğu belirlenen verilerin tema dağılımı çıktı veriliyor. Sınıflar ve temalar belirlenirken yine aidiyet olasılıklarından en yükseği kullanılmaktadır.
 
 ## Modellerin Kullanımı
 
