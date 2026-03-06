@@ -13,11 +13,8 @@
 Ekibimiz:
 
 Ahmet Tanrıkulu [@ahmettanrikulu](https://github.com/ahmettanrikulu)
-
 Emir Arıkan [@EmirArikan](https://github.com/EmirArikan)
-
 Serin Evcim [@serinevcim](https://github.com/serinevcim)
-
 Yusuf Mirza Çoban [@MalumMRZ](https://github.com/MalumMRZ)
 
 
